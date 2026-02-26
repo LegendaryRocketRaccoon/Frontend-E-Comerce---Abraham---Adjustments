@@ -1,0 +1,510 @@
+.home {
+width: 100%; 
+min-height: 100vh; 
+background: linear-gradient(180deg, #ffffff 0%, #e8e8e8 100%);
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+}
+
+.hero__wrap {
+  width: 100%;
+  max-width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* po */
+.hero__brand {
+  position: absolute;
+  left: 157px;
+  top: 67px;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* title + desc block */
+.hero__copy {
+  position: absolute;
+  left: 157px;
+  top: 184px;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: "Michroma", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.25;
+}
+
+.hero__desc {
+  margin: 0;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.3;
+}
+
+/* Ler mais button */
+.hero__cta {
+  position: absolute;
+  left: 157px;
+  top: 712px;
+
+  width: 255px;
+  height: 65px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  background: linear-gradient(135deg, #333333 0%, #000000 100%);
+
+  color: #fff;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* product image */
+.hero__media {
+  position: absolute;
+  left: 932px;
+  top: 184px;
+  width: 641px;
+  height: 641px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===== BENEFITS ===== */
+/* Antes: height fija 435 + centrado vertical => dejaba MUCHO vacío */
+.benefits {
+  width: 100%;
+
+  /* compactado */
+  height: auto;
+  padding: 110px 0 60px; /* (arriba un poco, abajo menos) */
+  display: flex;
+  justify-content: center;
+}
+
+.benefits__row {
+  width: 100%;
+  max-width: 1920px;
+
+  display: flex;
+  justify-content: center; /* centrado real */
+  align-items: center;
+
+  gap: 400px; /* parecido al figma */
+  padding: 0 244px; /* aire lateral figma */
+}
+
+.benefits__item {
+  width: 280px; /* controla el “bloque” para que el texto se vea equilibrado */
+  text-align: center;
+
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.35;
+
+  /* ayuda a que el salto de línea sea “bonito” */
+  text-wrap: balance;
+}
+
+.benefits__item strong {
+  font-weight: 700;
+}
+
+/* ===== NEWS HEAD ===== */
+/* Antes: height fija 332 + justify-end => se veía muy separado */
+.newsHead {
+  width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  /* compactado */
+  height: auto;
+  padding: 0 244px 60px; /* menos fondo, acerca a las cards */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsHead__title {
+  margin: 0;
+  text-align: center;
+
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 64px;
+  font-weight: 600;
+  color: #000;
+}
+
+.newsHead__sub {
+  margin: 0;
+  text-align: center;
+
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 32px;
+  font-weight: 300;
+  color: #000;
+}
+
+/* ===== GRID ===== */
+.grid {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  /* sube las cards (menos separación con Novidades) */
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.grid__loading {
+  text-align: center;
+  padding: 60px 0;
+  opacity: 0.75;
+}
+
+.grid__rows {
+  width: 100%;
+  height: 1255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* un poco menos de “aire” vertical entre filas */
+  gap: 100px;
+}
+
+.grid__row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  overflow: hidden;
+}
+
+/* product card */
+.card {
+  width: 316px;
+  height: 480px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.card__img {
+  width: 266px;
+  height: 255px;
+  border-radius: 20px;
+  align-self: center;
+  object-fit: contain;
+}
+
+.card__text {
+  height: 165px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__name {
+  width: 266px;
+  height: 38px;
+  text-align: center;
+
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 32px;
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__price {
+  width: 206px;
+  text-align: center;
+
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  width: 1920px;
+  height: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== FOOTER BAR ===== */
+.footerbar {
+  width: 100%;
+  height: 60px;
+  background: #3d3d3d;
+}
+
+/* Drawer vertical a la derecha (exacto como imagen) */
+.drawer {
+  position: absolute;
+  right: 60px;
+  top: 48px;
+
+  height: 331.33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+.drawer__btn {
+  width: 33px;
+  height: 33px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.drawer__btn img {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+  display: block;
+  transform: translateZ(0);
+}
+
+/* Reajuste fino por si tu wrap usa left fijo para icons (lo quitamos) */
+.hero__icons {
+  display: none;
+}
+
+/* ===== RESPONSIVE (sin romper desktop) ===== */
+@media (max-width: 1920px) {
+  .newsHead,
+  .banner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero__wrap {
+    height: auto;
+    padding: 32px 18px 60px;
+  }
+
+  .hero__brand,
+  .hero__copy,
+  .hero__cta,
+  .hero__media,
+  .drawer {
+    position: static;
+  }
+
+  .hero__copy {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 18px;
+  }
+
+  .hero__media {
+    width: 100%;
+    height: auto;
+    margin: 26px 0;
+  }
+
+  .hero__media img {
+    max-width: 520px;
+    height: auto;
+  }
+
+  .drawer {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 18px;
+    margin-top: 18px;
+    height: auto;
+  }
+
+  .benefits {
+    padding: 40px 0 30px;
+  }
+
+  .benefits__row {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 18px;
+  }
+
+  .grid__row {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .grid__rows {
+    height: auto;
+    padding: 40px 0;
+    gap: 40px;
+  }
+}
+
+
+/* ===== SEARCH HEADER ===== */
+.searchHeader {
+  position: fixed;
+  top: -350px; /* cuánto se oculta arriba */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 60px 30px; /* padding vertical: aumenta la altura interna */
+  z-index: 1000;
+  transition: top 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* separación entre bloques */
+  min-height: 300px; /* altura mínima del header */
+}
+
+.searchHeader.isOpen {
+  top: 0;
+}
+
+.searchHeader__bar {
+  width: 100%;
+  max-width: 600px;
+  height: 44px;
+  background: #e2e2e2;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+}
+
+.searchHeader__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.searchHeader__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Montserrat", system-ui;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+
+  &::placeholder {
+    color: #818181;
+  }
+}
+
+.searchHeader__section {
+  font-family: "Montserrat", system-ui;
+  font-size: 16px;
+  font-weight: 600;
+  color: #818181;
+  text-align: center; /* centra el título */
+  width: 100%;
+}
+
+.searchHeader__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra las etiquetas */
+  gap: 10px;
+  max-width: 800px;
+}
+
+.tag {
+  background: #e2e2e2;
+  border: none;            /* quita el borde negro por defecto */
+  outline: none;           /* quita outline visual por defecto */
+  box-shadow: none;        /* por si hay sombras que parezcan borde */
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 15px;
+  font-family: "Montserrat", system-ui;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.08s ease;
+  -webkit-appearance: none; /* evita estilos por defecto en Safari */
+  appearance: none;
+}
+
+.tag:hover {
+  background: #d0d0d0;
+}
+
+.tag:active {
+  transform: translateY(1px);
+}
+
+.tag:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.06); /* opcional: foco sutil accesible */
+}
