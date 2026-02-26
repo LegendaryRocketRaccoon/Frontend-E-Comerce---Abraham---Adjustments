@@ -54,6 +54,7 @@ export default function Product() {
     "Calça Térmica GMA",
     "Feminino",
     "Masculino",
+    "Batman",
   ];
 
   useEffect(() => {

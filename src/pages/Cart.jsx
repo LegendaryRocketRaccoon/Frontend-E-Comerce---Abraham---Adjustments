@@ -37,6 +37,7 @@ export default function Cart() {
     "Calça Térmica GMA",
     "Feminino",
     "Masculino",
+    "Batman",
   ];
 
   // atajo Ctrl+K / Escape

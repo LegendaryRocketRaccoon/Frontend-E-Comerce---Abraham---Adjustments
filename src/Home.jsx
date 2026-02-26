@@ -122,6 +122,7 @@ export default function Home() {
     "Calça Térmica GMA",
     "Feminino",
     "Masculino",
+    "Batman",
   ];
 
   return (

@@ -40,6 +40,7 @@ export default function Catalog() {
     "Calça Térmica GMA",
     "Feminino",
     "Masculino",
+    "Batman",
   ];
 
   // ===== BUSCA PRODUTOS + CATEGORIAS EM PARALELO =====
